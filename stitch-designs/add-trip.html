@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#fff8f2",
+              "on-secondary-container": "#00647a",
+              "on-surface-variant": "#56423e",
+              "background": "#fff8f2",
+              "surface-container-low": "#f9f2ec",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#eee7e1",
+              "tertiary": "#8d4f11",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e8e1dc",
+              "primary": "#9f402d",
+              "on-tertiary": "#ffffff",
+              "primary-container": "#e2725b",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#f3ede7",
+              "outline": "#89726d",
+              "outline-variant": "#ddc0ba",
+              "on-surface": "#1e1b18",
+              "secondary": "#00677e",
+              "secondary-container": "#8be0fd",
+              "tertiary-container": "#cb8241",
+              "on-tertiary-container": "#462200"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fff8f2;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f3ede7; }
+        ::-webkit-scrollbar-thumb { background: #ddc0ba; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 backdrop-blur-xl shadow-sm shadow-stone-200/50">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto flex-row-reverse">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-[#f3ede7] transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden ring-2 ring-white ring-offset-2 ring-offset-surface">
+<img alt="User Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0uC_hHJdRocHmN8sB1D8hpl0ou-UvfyKDy2R2HqGYbf9MBGMnUVhDJeMHKCP_qyaWgZuxoOskGIXW5CeGCswfGoGQWly6avBBaA0VQ7FtxLWpz8YOCX7zN2NE8gISwR2qivJbtPPeB6uT_mLgBxZk1nPLkaoDU1BLTcFayh9UZCu580fbtufePP1Ci3cfPxNCN8p9VSWo_P8aDYV04PIA3BH3fXwet53XdK5QKHcibb9HWZztz2eL6qwLVOZ-X-di3P_aw5orSO-5"/>
+</div>
+</div>
+<h1 class="text-lg font-bold tracking-tight text-[#9f402d] text-xl">The Wandering Editorial</h1>
+<div class="hidden md:flex gap-8 items-center font-bold">
+<a class="text-[#56423e] hover:bg-[#f3ede7] px-3 py-1 rounded-lg transition-colors" href="#">בית</a>
+<a class="text-[#56423e] hover:bg-[#f3ede7] px-3 py-1 rounded-lg transition-colors" href="#">הטיולים שלי</a>
+<a class="text-[#00677e] px-3 py-1 rounded-lg" href="#">הוסף טיול</a>
+<a class="text-[#56423e] hover:bg-[#f3ede7] px-3 py-1 rounded-lg transition-colors" href="#">פרופיל</a>
+</div>
+</div>
+</header>
+<main class="pt-24 px-4 max-w-4xl mx-auto">
+<section class="mb-10 text-right">
+<span class="text-secondary font-bold tracking-widest text-xs uppercase mb-2 block">התחלה חדשה</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-4">תכנן את המסע הבא שלך</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">צרו זיכרונות חדשים. הגדירו את היעד, המועד והסגנון של ההרפתקה הבאה שלכם בתוך רגעים ספורים.</p>
+</section>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-12 border border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-5 h-full">
+<div class="md:col-span-2 relative hidden md:block overflow-hidden">
+<img alt="Tropical Beach" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGsDbMO_tfT7_-o19Ze1IUQ4BGBaWek0m9fbXzbZ4jP7-LhpyJPeAWdHffbw8sXhEPaEO6rBJizao0O0JbXbtt-iBXzOwO21M04RycaEwssvqrG9lPT3IyROJ_6Ompf5dMC6hin9uR9o27OB73Qj0SB2YZOZtLiyTwpLzTn3RyKImOn0yAO30PyasPHyNfE2LUL4s5AdhbusfNMo7Ex0Lx7kUnHxuReCfyI7KkOs3Q79Hm-ekExmGK9kKgOdcAxwDPeTQGaK67HkLS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex flex-col justify-end p-8 text-white">
+<span class="material-symbols-outlined text-4xl mb-4">explore</span>
+<h3 class="text-2xl font-bold mb-2">לאן נטייל הפעם?</h3>
+<p class="text-sm opacity-90 leading-relaxed">"העולם הוא ספר, ואלו שאינם מטיילים קוראים רק דף אחד."</p>
+</div>
+</div>
+<form class="md:col-span-3 p-8 md:p-12 space-y-8">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant mr-1">לאן נוסעים?</label>
+<div class="relative group">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">location_on</span>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 pr-12 pl-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/60" placeholder="למשל: פירנצה, איטליה" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant mr-1">תאריך יציאה</label>
+<div class="relative">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">calendar_month</span>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 pr-12 pl-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" type="date"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant mr-1">תאריך חזרה</label>
+<div class="relative">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">event</span>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 pr-12 pl-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" type="date"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant mr-1">מספר מטיילים</label>
+<div class="relative">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">group</span>
+<select class="w-full bg-surface-container-high border-none rounded-xl py-4 pr-12 pl-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all appearance-none">
+<option>1 מטייל/ת</option>
+<option selected="">2 מטיילים</option>
+<option>3 מטיילים</option>
+<option>4 מטיילים</option>
+<option>5+ מטיילים</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant mr-1">תקציב משוער</label>
+<div class="relative">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">payments</span>
+<select class="w-full bg-surface-container-high border-none rounded-xl py-4 pr-12 pl-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all appearance-none">
+<option>חסכוני</option>
+<option selected="">סטנדרטי</option>
+<option>יוקרתי</option>
+<option>ללא הגבלה</option>
+</select>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant mr-1">הערות ובקשות מיוחדות</label>
+<div class="relative">
+<textarea class="w-full bg-surface-container-high border-none rounded-xl py-4 px-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/60" placeholder="ספרו לנו על העדפות מיוחדות, אלרגיות או אתרים שאסור לפספס..." rows="3"></textarea>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold rounded-xl shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 text-lg flex items-center justify-center gap-2" type="submit">
+<span>צור את הטיול שלי</span>
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-tertiary-container p-6 rounded-xl text-on-tertiary-container md:col-span-2 flex flex-col justify-between min-h-[160px]">
+<div>
+<span class="material-symbols-outlined text-3xl mb-2">auto_awesome</span>
+<h4 class="text-xl font-bold">הצעה חכמה</h4>
+<p class="text-sm opacity-80">בציר הזמן של פירנצה מומלץ להוסיף ביקור בגלריית אופיצי בשעות הבוקר המוקדמות.</p>
+</div>
+<a class="text-xs font-bold underline mt-4" href="#">קרא עוד על היעד</a>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2">cloud</span>
+<p class="text-sm font-medium">מזג אוויר צפוי</p>
+<p class="text-2xl font-bold text-on-surface">24°C</p>
+<p class="text-xs text-on-surface-variant">שמשי ונעים</p>
+</div>
+</div>
+</main>
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-[#fff8f2]/80 backdrop-blur-xl rounded-t-[1.5rem] shadow-[0_-4px_24px_rgba(30,27,24,0.04)]">
+<div class="flex justify-around items-center px-4 pb-6 pt-3 w-full flex-row-reverse">
+<a class="flex flex-col items-center justify-center text-[#56423e] opacity-70 hover:opacity-100 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">בית</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#56423e] opacity-70 hover:opacity-100 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">travel_explore</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">הטיולים שלי</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#00677e] font-bold scale-110 transition-transform active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">הוסף טיול</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#56423e] opacity-70 hover:opacity-100 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">פרופיל</span>
+</a>
+</div>
+</nav>
+</body></html>

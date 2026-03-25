@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#fff8f2",
+              "on-secondary-container": "#00647a",
+              "on-surface-variant": "#56423e",
+              "background": "#fff8f2",
+              "surface-container-low": "#f9f2ec",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#eee7e1",
+              "tertiary": "#8d4f11",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e8e1dc",
+              "primary": "#9f402d",
+              "on-tertiary": "#ffffff",
+              "primary-container": "#e2725b",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#f3ede7",
+              "outline": "#89726d",
+              "outline-variant": "#ddc0ba",
+              "on-surface": "#1e1b18",
+              "secondary": "#00677e",
+              "secondary-container": "#8be0fd",
+              "tertiary-container": "#cb8241",
+              "on-tertiary-container": "#462200"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        background-color: #fff8f2;
+        color: #1e1b18;
+      }
+      .headline-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container/30">
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 backdrop-blur-xl shadow-sm shadow-stone-200/50">
+<nav class="flex justify-between items-center px-6 h-16 w-full max-auto flex-row-reverse max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User Profile Avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiy2SHfNEXNgkFXp9-Ldnpkd1sBHcuXXRzaCJhKHCQL2cIY47MXoc_jTImWMILJiFR8f_orragKNEn9Up782dqDoDj9x3Xk_ywY3hN7lckTGWa2m-_OBzIqdPxEVVzQPIZcryZafeaWrvvrYiOgrcT5aeA9ebW9QeC0A-AwzqKvhBN9Txf6cG6wcbX4FAXir0j6BUcvISR_0uEcCX3FJig_zWAbgRjRTYx2_WT8v6JWs1knvZcqFrnRPwUZ1U1XB-Mo64SOG9CHGTj"/>
+</div>
+</div>
+<h1 class="font-headline text-lg font-bold tracking-tight text-[#9f402d] text-xl">The Wandering Editorial</h1>
+<div class="flex items-center">
+<button class="p-2 rounded-full hover:bg-[#f3ede7] transition-colors active:scale-95 duration-200 text-[#56423e]">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-20 pb-32 max-w-screen-xl mx-auto px-6">
+<section class="relative h-[400px] rounded-xl overflow-hidden mb-12">
+<img alt="Venice Italy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCON3HLDHIou763q0MlkietdeJJAX2-E8VKliCvmcN_NjLq0eGpVD1x2ElcXJoLOlY8Bgn8llgjvOH1sXKBmS1hPgGM25vnr51EmmE_A8jCrw7HhWkC98AUsKpRrHyhVOc-_UUCZ490uoMspXuT9pwuJlKsgzsuSv3x5SAzee4BCxKYRgAL95IwTAu7oTtsAUgr8uD1TJ3XtHEv9GcsKk14-XHZoLRYusQpqsBQN2PJ3WS1RJFZf-c1JFM5sWyCVW8ji-mVioC4AMX-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 right-8 text-white text-right">
+<h2 class="font-headline text-5xl font-extrabold mb-2">מסע בוונציה הקסומה</h2>
+<p class="text-xl opacity-90">4 ימים של תרבות, היסטוריה ויין משובח</p>
+</div>
+<div class="absolute top-8 left-8">
+<span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm font-bold border border-white/30">יוני 2024</span>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<div class="lg:col-span-8 space-y-12">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<span class="text-secondary font-headline text-4xl font-black">01</span>
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">הגעה ושיט תעלות</h3>
+<p class="text-on-surface-variant text-sm">יום ראשון - 12 ביוני</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-surface-container-low p-6 rounded-xl flex gap-6 items-start">
+<div class="bg-white p-3 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+</div>
+<div class="flex-1">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">12:30 - ארוחת צהריים</span>
+<h4 class="font-headline text-xl font-bold mt-1">Trattoria Al Gazzettino</h4>
+<p class="text-on-surface-variant mt-2 leading-relaxed">פסטה ביתית ופירות ים טריים בלב העיר העתיקה. מומלץ להזמין מקום מראש.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col md:flex-row gap-6">
+<div class="md:w-1/3 h-48 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCJCBBazU2SQEP3J-jzHROkECrKFaUZzui4D1e1lm0m8Rr7MI0rBc_JV8C-oKf7asyEem1r7qzPbrarMb1wg3rnBkJCaE0M3RW0Fk97xaxsAJhqYR0wQQ82KQI28Y184wZM3OibwOm-2xkcDpjPB6ve8A5XFxo66P4vL65ccgLWQzzbSPaEptD59zXKKGdAx8cVqClQMBhh6nZpAeyH5AT-K2vMiQw5NW_Mqv3mE9stJHCJuRoZX9Ft4GI_hwSJRZ579pKT8rmSPq3"/>
+</div>
+<div class="flex-1">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">15:00 - חוויה</span>
+<h4 class="font-headline text-xl font-bold mt-1">שיט גונדולה בשקיעה</h4>
+<p class="text-on-surface-variant mt-2 leading-relaxed">שיט אישי בתעלות הנסתרות של העיר. נקודת מפגש: גשר הריאלטו.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-medium text-on-surface-variant">45 דקות</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-medium text-on-surface-variant">מוזמן</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-4 mb-6">
+<span class="text-secondary font-headline text-4xl font-black">02</span>
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">אמנות וארמונות</h3>
+<p class="text-on-surface-variant text-sm">יום שני - 13 ביוני</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl border-r-4 border-primary-container">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">09:00</span>
+<h4 class="font-headline text-lg font-bold mt-1">בזיליקת סן מרקו</h4>
+<p class="text-on-surface-variant text-sm mt-2">סיור מודרך בפסיפסים המוזהבים.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">11:30</span>
+<h4 class="font-headline text-lg font-bold mt-1">ארמון הדוג'ה</h4>
+<p class="text-on-surface-variant text-sm mt-2">חציית גשר האנחות וביקור בכלא העתיק.</p>
+</div>
+</div>
+</div>
+</div>
+<aside class="lg:col-span-4 space-y-8">
+<div class="bg-surface-container p-4 rounded-xl shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-headline font-bold text-on-surface">מפת המסלול</h4>
+<span class="material-symbols-outlined text-secondary">map</span>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale opacity-50 transition-all group-hover:grayscale-0 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV1IJsexCWCcpeBj6YqNWsN_7ju6kh15R6VHmAofc7xQaPxSSuuyS_LJWOK57GjL7FFQUc1qnBVrRHUfKkOYwRwfg5icNQxoB_m6vPylPsy-QeuD_IaGT6n49H25O9_ruhSZKMyzL9zERxA0PxAdFRgP-_Euy2WqMMRCY3Ocw6E3xbVo679fZN5yfrmqK6c5rl1nwTXBWraX3u2nVXNfZqSFrAivkXDADMYF0QDOr4O5mTVJzOzDR-_HAZZNasuCykuWwFMiiQHuMG"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="bg-primary text-white px-6 py-2 rounded-full font-bold shadow-xl active:scale-95 transition-transform">פתח מפה</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<h4 class="font-headline font-bold text-on-surface mb-4">לינה</h4>
+<div class="flex gap-4">
+<img class="w-20 h-20 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPXoOmtxkmSXJLTpPPUewvRSiXnvk86oPLR8t-UDLLDrqK-85UTM9dPrtFrKt3gpQsdVI-jNOlJcMWO-C-j5d_X-kdXLxWp8C2oWbnOzhiioL7PI7HgNlvg1zb8RbqqVpaSPneWIXx-UttkbY2D2H7Xsb5_NeBvvp5BCnrieMn1WWjdxMbm-l-Dgn-uODzRwZxLNy4L4L-VU7Rxk4cofvEC1x-D2of6-N7uGSnzPJ7Pf7YNW83V8zs8ZhaRN2Mu6XeZwMQKenj4hOu"/>
+<div>
+<h5 class="font-bold text-on-surface">Hotel Danieli</h5>
+<p class="text-sm text-on-surface-variant">Riva degli Schiavoni, 4196</p>
+<div class="flex mt-2 items-center text-yellow-600">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-3 border border-outline-variant rounded-xl text-primary font-bold hover:bg-primary/5 transition-colors">פרטי הזמנה</button>
+</div>
+<div class="bg-tertiary-container/10 p-6 rounded-xl space-y-4">
+<h4 class="font-headline font-bold text-tertiary">סיכום תקציב</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/50 p-4 rounded-lg">
+<span class="text-xs text-on-surface-variant block mb-1">טיסות</span>
+<span class="font-headline font-bold text-lg">€450</span>
+</div>
+<div class="bg-white/50 p-4 rounded-lg">
+<span class="text-xs text-on-surface-variant block mb-1">מלון</span>
+<span class="font-headline font-bold text-lg">€1,200</span>
+</div>
+<div class="bg-white/50 p-4 rounded-lg">
+<span class="text-xs text-on-surface-variant block mb-1">אוכל</span>
+<span class="font-headline font-bold text-lg">€600</span>
+</div>
+<div class="bg-white/50 p-4 rounded-lg">
+<span class="text-xs text-on-surface-variant block mb-1">אחר</span>
+<span class="font-headline font-bold text-lg">€250</span>
+</div>
+</div>
+<div class="pt-4 border-t border-tertiary/20 flex justify-between items-center">
+<span class="font-bold text-on-surface">סה"כ מוערך</span>
+<span class="text-2xl font-black text-tertiary">€2,500</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[1.5rem] bg-[#fff8f2]/80 backdrop-blur-xl shadow-[0_-4px_24px_rgba(30,27,24,0.04)]">
+<div class="flex justify-around items-center px-4 pb-6 pt-3 w-full flex-row-reverse max-w-screen-xl mx-auto">
+<a class="flex flex-col items-center justify-center text-[#56423e] opacity-70 hover:opacity-100 transition-transform active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">בית</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#00677e] font-bold scale-110 transition-transform active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">travel_explore</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">הטיולים שלי</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#56423e] opacity-70 hover:opacity-100 transition-transform active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">הוסף טיול</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#56423e] opacity-70 hover:opacity-100 transition-transform active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">פרופיל</span>
+</a>
+</div>
+</nav>
+</body></html>
