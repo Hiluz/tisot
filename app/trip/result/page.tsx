@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import BottomNav from "@/components/BottomNav";
 import TripResults from "@/components/TripResults";
 import type { TripResult, TripFormData } from "@/types";
-import { Loader2 } from "lucide-react";
 
 export default function TripResultPage() {
   const router = useRouter();
@@ -25,21 +25,22 @@ export default function TripResultPage() {
 
   if (!tripResult || !formData) {
     return (
-      <div className="flex min-h-screen flex-col bg-background">
+      <div className="min-h-screen bg-[#fff8f2] text-[#1e1b18]">
         <Navbar />
-        <div className="flex flex-1 items-center justify-center">
-          <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+        <div className="flex flex-1 items-center justify-center pt-32">
+          <span className="material-symbols-outlined text-4xl animate-spin text-[#9f402d]">progress_activity</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-background">
+    <div className="min-h-screen bg-[#fff8f2] text-[#1e1b18] pb-24">
       <Navbar />
       <main className="flex-1">
         <TripResults tripResult={tripResult} formData={formData} />
       </main>
+      <BottomNav />
     </div>
   );
 }
